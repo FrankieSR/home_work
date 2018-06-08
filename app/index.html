@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>test</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#111">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- <script type="text/html" id="product-card">
+</script> -->
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+			<a class="navbar-brand" href="#">THIS SHOP</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+			</div>
+		</nav>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12 col-md-2 col-lg-2">
+
+				<nav class="nav flex-column bg-warning">
+					<a class="nav-link active" href="#">Test</a>
+					<a class="nav-link" href="#">Test</a>
+					<a class="nav-link" href="#">Test</a>
+					<a class="nav-link" href="#">Test</a>
+					<a class="nav-link" href="#">Test</a>
+					<a class="nav-link" href="#">Test</a>
+					<a class="nav-link" href="#">Test</a>
+					<a class="nav-link" href="#">Test</a>
+					<a class="nav-link" href="#">Test</a>
+					<a class="nav-link" href="#">Test</a>
+					<a class="nav-link" href="#">Test</a>
+					<a class="nav-link" href="#">Test</a>
+				</nav>
+
+			</div>
+			<div class="col-sm-12 col-md-10 col-lg-10">
+
+
+				<div class="btn-group " role="group">
+					<button class="btn btn-danger " data-bind="click: sortPriceMin">The lowest price</button>
+					<button class="btn btn-danger" data-bind="click: sortPrice">The highest price</button>
+					<button class="btn btn-danger" data-bind="click: sortNameAZ">Sort name A-Z</button>
+					<button class="btn btn-danger" data-bind="click: sortNameZA">Sort name Z-A</button>
+					<button class="btn btn-danger" data-bind="click: ">5 products</button>
+					<button class="btn btn-danger" data-bind="click: getProductCount">10 products</button>
+					<button class="btn btn-danger" data-bind="click: ">All products</button>
+				</div>
+
+
+				<span data-bind="text: 'all products: ' +  getProductsLength()"></span>
+
+				<div class="page" >
+
+					<div data-bind="foreach:{ data: products, as: 'product' }" class="wrapper-products">
+						<div class="card" data-bind="visible: product.visibility">
+							<div class="images" data-bind="if: product.images.length != 0">
+								<img class="card-img-top" data-bind="attr: { src: images[0].url }" alt="Card image cap">
+							</div>
+							<div class="images" data-bind="if: product.images.length === 0">
+								<img class="card-img-top" data-bind="attr: { src: 'http://billie-shop.loc/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/images/catalog/product/placeholder/image.jpg' }" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<h5 class="card-title" data-bind="text:product.name"></h5>
+								<p class="card-text" data-bind="text: product.short_description"></p>
+								<span data-bind="text: 'price: ' + product.price"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+			<h3>SHOP</h3>
+		</nav>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>

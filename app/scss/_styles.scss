@@ -1,0 +1,49 @@
+nav {
+  box-shadow: 2px 2px 10px #333;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+body {
+  background: #ccc;
+}
+.pagination {
+  max-width: 300px;
+}
+.page-navigation {
+  max-width: 300px;
+}
+.btn-group {
+  box-shadow: 2px 2px 10px #333;
+  border-radius: 5px;
+}
+
+.wrapper-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card {
+  margin: 10px;
+  flex-basis: 30%;
+  min-width: 300px;
+  min-height: 380px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1.5px solid orange;
+  box-shadow: 2px 2px 10px #333;
+  cursor: pointer;
+  transition: .5s;
+
+  .card-title {
+    font-weight: 900;
+  }
+}
+
+.images {
+  img {
+    width: 50%;
+    margin: 15px 0 -10px 0;
+  }
+}
